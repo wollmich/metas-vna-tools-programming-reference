@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html ><html lang="en-US"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" href="../css/bulma.css" /><link rel="stylesheet" href="../css/font-awesome.min.css" /><link rel="stylesheet" href="../css/presentationStyle.css" /><link rel="stylesheet" href="../css/vs.min.css" /><script src="../scripts/jquery-3.5.1.min.js"></script><script src="../scripts/clipboard.min.js"></script><script src="../scripts/highlight.min.js"></script><script src="../scripts/presentationStyle.js"></script><title>VnaToolsRealTimeCOM3 Class</title><meta name="Title" content="VnaToolsRealTimeCOM3" /><meta name="Help.Id" content="T:Metas.Vna.RealTime.COM.VnaToolsRealTimeCOM3" /><meta name="Help.ContentType" content="Reference" /><meta name="container" content="Metas.Vna.RealTime.COM" /><meta name="guid" content="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM3" /><meta name="Description" content="VNA Tools Real Time COM 3" /><meta name="tocFile" content="../toc/ID0JC0.xml" /></head><body><div class="fixedLayout"><div id="Header" class="fixedHeader"><div class="pageHeader level mb-0 py-2 px-4"><div id="TitleContainer" class="level-left"><div id="DocumentationTitle" class="level-item">METAS VNA Tools Help</div></div><div id="LangFilterSearchContainer" class="level-right"><div class="level-item"><div class="dropdown is-hoverable"><div class="dropdown-trigger"><button class="button" aria-haspopup="true" aria-controls="dropdown-menu"><span id="CurrentLanguage"></span><span class="icon is-small"><i class="fa fa-angle-down" aria-hidden="true"></i></span></button></div><div class="dropdown-menu" role="menu"><div id="LanguageSelections" class="dropdown-content"><a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a><a class="dropdown-item languageFilterItem" data-languageId="vb">VB</a><a class="dropdown-item languageFilterItem" data-languageId="cpp">C++</a><a class="dropdown-item languageFilterItem" data-languageId="fs">F#</a></div></div></div></div><div class="level-item"><form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;"><div class="field"><div class="control has-icons-left"><input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" /><span class="icon is-small is-left"><i class="fa fa-search"></i></span><button id="SearchButton" type="submit" class="is-hidden"></button></div></div></form></div></div></div></div><div class="fixedContent"><nav class="breadcrumb my-1 px-2 border-bottom" role="navigation"><ul id="TopicBreadcrumbs" /></nav><div class="columns pl-5 pr-5 fixedContent"><div id="ShowHideTOCColumn" class="column is-hidden-tablet"><a id="ShowHideTOC">Show/Hide TOC</a></div><div id="TOCColumn" class="column is-hidden-mobile"><nav class="toc"><ul id="TableOfContents" class="toc-menu" /></nav></div><div id="TopicContent" class="column content is-7"><h1>Vna<wbr />Tools<wbr />Real<wbr />Time<wbr />COM<wbr />3 Class</h1><div class="summary">
+            VNA Tools Real Time COM 3
+            </div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Definition</h2><div id="IDBSection"><strong>Namespace:</strong> <a href="N_Metas_Vna_RealTime_COM.htm">Metas.Vna.RealTime.COM</a><br /><strong>Assembly:</strong> Metas.Vna.RealTime.COM (in Metas.Vna.RealTime.COM.dll) Version: 2.8.8578.19668<div class="codeSnippet" data-codeSnippetLanguage="cs"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="keyword">class</span> <span class="identifier">VnaToolsRealTimeCOM3</span> : <span class="identifier">VnaToolsRealTimeCOM2</span>, 
+	<span class="identifier">IVnaToolsRealTimeCOM3</span></code></pre></div></div><div class="codeSnippet is-hidden" data-codeSnippetLanguage="vb"><div class="codeHeader"><span class="codeHeaderTitle">VB</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-vb"><span class="keyword">Public</span> <span class="keyword">Class</span> <span class="identifier">VnaToolsRealTimeCOM3</span>
+	<span class="keyword">Inherits</span> <span class="identifier">VnaToolsRealTimeCOM2</span>
+	<span class="keyword">Implements</span> <span class="identifier">IVnaToolsRealTimeCOM3</span></code></pre></div></div><div class="codeSnippet is-hidden" data-codeSnippetLanguage="cpp"><div class="codeHeader"><span class="codeHeaderTitle">C++</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cpp"><span class="keyword">public</span> <span class="keyword">ref class</span> <span class="identifier">VnaToolsRealTimeCOM3</span> : <span class="keyword">public</span> <span class="identifier">VnaToolsRealTimeCOM2</span>, 
+	<span class="identifier">IVnaToolsRealTimeCOM3</span></code></pre></div></div><div class="codeSnippet is-hidden" data-codeSnippetLanguage="fs"><div class="codeHeader"><span class="codeHeaderTitle">F#</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-fs"><span class="keyword">type</span> <span class="identifier">VnaToolsRealTimeCOM3</span> = 
+    <span class="keyword">class</span>
+        <span class="keyword">inherit</span> <span class="identifier">VnaToolsRealTimeCOM2</span>
+        <span class="keyword">interface</span> <span class="identifier">IVnaToolsRealTimeCOM3</span>
+    <span class="keyword">end</span></code></pre></div></div><dl class="inheritanceHierarchy"><dt>Inheritance</dt><dd><a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>  <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>  <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>  <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>  <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM2.htm">VnaToolsRealTimeCOM2</a>  <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>  <span class="selflink">VnaToolsRealTimeCOM3</span></dd></dl><dl class="inheritanceHierarchy"><dt>Derived</dt><dd><div><a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM4.htm">Metas.Vna.RealTime.COM<span id="LST5BDD327B_0" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>VnaToolsRealTimeCOM4</a></div></dd></dl><dl class="implementsList"><dt>Implements</dt><dd><a href="T_Metas_Vna_RealTime_COM_IVnaToolsRealTimeCOM3.htm">IVnaToolsRealTimeCOM3</a></dd></dl></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Constructors</h2><div id="ID0ZB0FASection"><table id="ConstructorList" class="table is-hoverable"><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM3__ctor.htm">VnaToolsRealTimeCOM3</a></td><td>Initializes a new instance of the <span class="selflink">VnaToolsRealTimeCOM3</span> class</td></tr></table></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Properties</h2><div id="ID0PC0FASection"><table id="PropertyList" class="table is-hoverable"><tr><td><a href="P_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_RootPath.htm">RootPath</a></td><td>
+            Root Path
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="P_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_RootPathDatabase.htm">RootPathDatabase</a></td><td>
+            Root Path Database
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="P_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_RootPathDatabaseCables.htm">RootPathDatabaseCables</a></td><td>
+            Root Path Database Cables
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="P_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_RootPathDatabaseCalibrationStandards.htm">RootPathDatabaseCalibrationStandards</a></td><td>
+            Root Path Database Calibration Standards
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="P_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_RootPathDatabaseCmcEntries.htm">RootPathDatabaseCmcEntries</a></td><td>
+            Root Path Database CMC Entries
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="P_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_RootPathDatabaseConnectors.htm">RootPathDatabaseConnectors</a></td><td>
+            Root Path Database Connectors
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="P_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_RootPathDatabaseDUTs.htm">RootPathDatabaseDUTs</a></td><td>
+            Root Path Database DUTs
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="P_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_RootPathDatabaseVnaDevices.htm">RootPathDatabaseVnaDevices</a></td><td>
+            Root Path Database VNA Devices
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr></table></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Methods</h2><div id="IDAFASection"><table id="MethodList" class="table is-hoverable"><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_AddCmcUncertainties.htm">AddCmcUncertainties</a></td><td>
+            Adds CMC Uncertainties
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_CheckCmcUncertainties.htm">CheckCmcUncertainties</a></td><td>
+            Checks CMC uncertainties
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_ClearCache.htm">ClearCache</a></td><td>
+            Clears cache
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_ComputeCalibration.htm">ComputeCalibration</a></td><td>
+            Computes calibration
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_ComputeErrorCorrection.htm">ComputeErrorCorrection</a></td><td>
+            Computes error correction
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM3_ConvertSParamData2VnaData.htm">ConvertSParamData2VnaData</a></td><td>
+            Converts S-parameter data to VNA data
+            </td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM3_ConvertVnaData2SParamData.htm">ConvertVnaData2SParamData</a></td><td>
+            Converts VNA data to S-parameter data
+            </td></tr><tr><td><a href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)" target="_blank" rel="noopener noreferrer">Equals</a></td><td>Determines whether the specified object is equal to the current object.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr><tr><td><a href="https://learn.microsoft.com/dotnet/api/system.object.finalize#system-object-finalize" target="_blank" rel="noopener noreferrer">Finalize</a></td><td>Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr><tr><td><a href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode" target="_blank" rel="noopener noreferrer">GetHashCode</a></td><td>Serves as the default hash function. <br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr><tr><td><a href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype" target="_blank" rel="noopener noreferrer">GetType</a></td><td>Gets the <a href="https://learn.microsoft.com/dotnet/api/system.type" target="_blank" rel="noopener noreferrer">Type</a> of the current instance.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_ListCables.htm">ListCables</a></td><td>
+            List cables from the database
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_ListCalibrationStandards.htm">ListCalibrationStandards</a></td><td>
+            List calibration standards from the database
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_ListCalibrationStandardTypes.htm">ListCalibrationStandardTypes</a></td><td>
+            List types of calibration standards
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_ListCmcEntries.htm">ListCmcEntries</a></td><td>
+            List CMC entries from the database
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM2_ListCollectionItems.htm">ListCollectionItems</a></td><td>
+            Lists collection item names
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM2.htm">VnaToolsRealTimeCOM2</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_ListConnectors.htm">ListConnectors</a></td><td>
+            List connectors from the database
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_ListDUTUncertainties.htm">ListDUTUncertainties</a></td><td>
+            List DUT uncertainties from the database
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_ListVNADevices.htm">ListVNADevices</a></td><td>
+            List VNA devices from the database
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_LoadCable.htm">LoadCable</a></td><td>
+            Loads a cable from the database
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_LoadCalibration.htm">LoadCalibration</a></td><td>
+            Loads calibration
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_LoadCalibrationConfig.htm">LoadCalibrationConfig</a></td><td>
+            Loads calibration config
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_LoadCalibrationStandard.htm">LoadCalibrationStandard</a></td><td>
+            Loads a calibration standard from the database
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_LoadCmcEntry.htm">LoadCmcEntry</a></td><td>
+            Loads a CMC entry from the database
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM2_LoadCollectionItemAsSParamData.htm">LoadCollectionItemAsSParamData</a></td><td>
+            Loads collection item as S-parameter data
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM2.htm">VnaToolsRealTimeCOM2</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_LoadConnector.htm">LoadConnector</a></td><td>
+            Loads a connector from the database
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_LoadDUTUncertainty.htm">LoadDUTUncertainty</a></td><td>
+            Loads a DUT uncertainty from the database
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_LoadErrorCorrectionConfig.htm">LoadErrorCorrectionConfig</a></td><td>
+            Loads error correction config
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_LoadJournal.htm">LoadJournal</a></td><td>
+            Loads a measurement journal
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM3_LoadPowerSensorDatabased.htm">LoadPowerSensorDatabased</a></td><td>
+            Loads a power sensor databased from the database
+            </td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM3_LoadPowerSensorTable.htm">LoadPowerSensorTable</a></td><td>
+            Loads a power sensor table from the database
+            </td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_LoadSlidingLoadConfig.htm">LoadSlidingLoadConfig</a></td><td>
+            Loads sliding load config
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_LoadSParamData.htm">LoadSParamData</a></td><td>
+            Loads S-parameter data
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM2_LoadVerificationConfig.htm">LoadVerificationConfig</a></td><td>
+            Loads verification config
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM2.htm">VnaToolsRealTimeCOM2</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM3_LoadVnaData.htm">LoadVnaData</a></td><td>
+            Loads VNA data
+            </td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_LoadVNADevice.htm">LoadVNADevice</a></td><td>
+            Loads a VNA device from the database
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM3_LoadVNADevice2.htm">LoadVNADevice2</a></td><td>
+            Loads a VNA device from the database
+            </td></tr><tr><td><a href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone" target="_blank" rel="noopener noreferrer">MemberwiseClone</a></td><td>Creates a shallow copy of the current <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_NewCable.htm">NewCable</a></td><td>
+            Creates a new cable
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_NewCalibrationConfig.htm">NewCalibrationConfig</a></td><td>
+            Creates a new calibration config
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_NewCalibrationStandard.htm">NewCalibrationStandard</a></td><td>
+            Creates a new calibration standard
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_NewCmcEntry.htm">NewCmcEntry</a></td><td>
+            Creates a new cable
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_NewConnector.htm">NewConnector</a></td><td>
+            Creates a new connector
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_NewDatabasedCalibrationStandard.htm">NewDatabasedCalibrationStandard</a></td><td>
+            Creates a new databased calibration standard
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_NewDUTUncertainty.htm">NewDUTUncertainty</a></td><td>
+            Creates a new DUT uncertainty
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_NewErrorCorrectionConfig.htm">NewErrorCorrectionConfig</a></td><td>
+            Creates a new error correction config
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_NewJournal.htm">NewJournal</a></td><td>
+            Creates a new measurement journal
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM3_NewPowerSensorDatabased.htm">NewPowerSensorDatabased</a></td><td>
+            Creates a new power sensor databased
+            </td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM3_NewPowerSensorTable.htm">NewPowerSensorTable</a></td><td>
+            Creates a new power sensor table
+            </td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_NewProject.htm">NewProject(String, String, <span id="LST5BDD327B_1" data-languageSpecificText="cpp=array&lt;"></span>Int32<span id="LST5BDD327B_2" data-languageSpecificText="cpp=&gt;|cs=[]|vb=()|nu=[]|fs=[]"></span>, <span id="LST5BDD327B_3" data-languageSpecificText="cpp=array&lt;"></span>String<span id="LST5BDD327B_4" data-languageSpecificText="cpp=&gt;|cs=[]|vb=()|nu=[]|fs=[]"></span>, <span id="LST5BDD327B_5" data-languageSpecificText="cpp=array&lt;"></span>String<span id="LST5BDD327B_6" data-languageSpecificText="cpp=&gt;|cs=[]|vb=()|nu=[]|fs=[]"></span>, Boolean)</a></td><td>
+            Creates a new project
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_NewProject_1.htm">NewProject(String, String, <span id="LST5BDD327B_7" data-languageSpecificText="cpp=array&lt;"></span>Int32<span id="LST5BDD327B_8" data-languageSpecificText="cpp=&gt;|cs=[]|vb=()|nu=[]|fs=[]"></span>, <span id="LST5BDD327B_9" data-languageSpecificText="cpp=array&lt;"></span>String<span id="LST5BDD327B_10" data-languageSpecificText="cpp=&gt;|cs=[]|vb=()|nu=[]|fs=[]"></span>, <span id="LST5BDD327B_11" data-languageSpecificText="cpp=array&lt;"></span>String<span id="LST5BDD327B_12" data-languageSpecificText="cpp=&gt;|cs=[]|vb=()|nu=[]|fs=[]"></span>, String, Boolean)</a></td><td>
+            Creates a new project
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM3_NewProject2.htm">NewProject2(String, String, <span id="LST5BDD327B_13" data-languageSpecificText="cpp=array&lt;"></span>Int32<span id="LST5BDD327B_14" data-languageSpecificText="cpp=&gt;|cs=[]|vb=()|nu=[]|fs=[]"></span>, <span id="LST5BDD327B_15" data-languageSpecificText="cpp=array&lt;"></span>String<span id="LST5BDD327B_16" data-languageSpecificText="cpp=&gt;|cs=[]|vb=()|nu=[]|fs=[]"></span>, <span id="LST5BDD327B_17" data-languageSpecificText="cpp=array&lt;"></span>String<span id="LST5BDD327B_18" data-languageSpecificText="cpp=&gt;|cs=[]|vb=()|nu=[]|fs=[]"></span>, Boolean)</a></td><td>
+            Creates a new project
+            </td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM3_NewProject2_1.htm">NewProject2(String, String, <span id="LST5BDD327B_19" data-languageSpecificText="cpp=array&lt;"></span>Int32<span id="LST5BDD327B_20" data-languageSpecificText="cpp=&gt;|cs=[]|vb=()|nu=[]|fs=[]"></span>, <span id="LST5BDD327B_21" data-languageSpecificText="cpp=array&lt;"></span>String<span id="LST5BDD327B_22" data-languageSpecificText="cpp=&gt;|cs=[]|vb=()|nu=[]|fs=[]"></span>, <span id="LST5BDD327B_23" data-languageSpecificText="cpp=array&lt;"></span>String<span id="LST5BDD327B_24" data-languageSpecificText="cpp=&gt;|cs=[]|vb=()|nu=[]|fs=[]"></span>, String, Boolean)</a></td><td>
+            Creates a new project
+            </td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_NewSlidingLoadConfig.htm">NewSlidingLoadConfig</a></td><td>
+            Creates new sliding load config
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_NewSParamData.htm">NewSParamData</a></td><td>
+            Creates a new S-parameter data
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM2_NewVerificationConfig.htm">NewVerificationConfig</a></td><td>
+            Creates a new verification config
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM2.htm">VnaToolsRealTimeCOM2</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM3_NewVnaData.htm">NewVnaData</a></td><td>
+            Creates a new VNA data
+            </td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_NewVNADevice.htm">NewVNADevice</a></td><td>
+            Creates a new VNA device
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM3_NewVNADevice2.htm">NewVNADevice2</a></td><td>
+            Creates a new VNA device
+            </td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_RemoveCmcUncertainties.htm">RemoveCmcUncertainties</a></td><td>
+            Removes CMC Uncertainties
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_SaveCable.htm">SaveCable</a></td><td>
+            Saves the cable to the database
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_SaveCalibration.htm">SaveCalibration(String, CalibrationDataCOM)</a></td><td>
+            Saves Calibration
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_SaveCalibration_1.htm">SaveCalibration(String, CalibrationDataCOM, Boolean)</a></td><td>
+            Saves Calibration
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_SaveCalibrationConfig.htm">SaveCalibrationConfig</a></td><td>
+            Saves calibration config
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_SaveCalibrationStandard.htm">SaveCalibrationStandard</a></td><td>
+            Saves the calibration standard to the database
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_SaveCmcEntry.htm">SaveCmcEntry</a></td><td>
+            Saves the CMC entry to the database
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_SaveConnector.htm">SaveConnector</a></td><td>
+            Saves the connector to the database
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_SaveDUTUncertainty.htm">SaveDUTUncertainty</a></td><td>
+            Saves the DUT uncertainty to the database
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_SaveErrorCorrectionConfig.htm">SaveErrorCorrectionConfig</a></td><td>
+            Saves error correction config
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_SaveJournal.htm">SaveJournal</a></td><td>
+            Saves the measurement journal
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM3_SavePowerSensorDatabased.htm">SavePowerSensorDatabased</a></td><td>
+            Saves the power sensor databased to the database
+            </td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM3_SavePowerSensorTable.htm">SavePowerSensorTable</a></td><td>
+            Saves the power sensor table to the database
+            </td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_SaveSlidingLoadConfig.htm">SaveSlidingLoadConfig</a></td><td>
+            Saves sliding load config
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_SaveSParamData.htm">SaveSParamData(String, SParamDataCOM)</a></td><td>
+            Saves S-parameter data
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_SaveSParamData_1.htm">SaveSParamData(String, SParamDataCOM, Boolean)</a></td><td>
+            Saves S-parameter data
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM2_SaveSParamDataCollectionAsBinary.htm">SaveSParamDataCollectionAsBinary</a></td><td>
+            Saves S-parameter data collection as binary
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM2.htm">VnaToolsRealTimeCOM2</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM2_SaveSParamDataCollectionAsCovarianceText.htm">SaveSParamDataCollectionAsCovarianceText</a></td><td>
+            Saves S-parameter data collection as covariance text
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM2.htm">VnaToolsRealTimeCOM2</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM2_SaveVerificationConfig.htm">SaveVerificationConfig</a></td><td>
+            Saves verification config
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM2.htm">VnaToolsRealTimeCOM2</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM3_SaveVnaData.htm">SaveVnaData(String, VnaDataCOM)</a></td><td>
+            Saves VNA data
+            </td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM3_SaveVnaData_1.htm">SaveVnaData(String, VnaDataCOM, Boolean)</a></td><td>
+            Saves VNA data
+            </td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM_SaveVNADevice.htm">SaveVNADevice</a></td><td>
+            Saves the VNA device to the database
+            <br />(Inherited from <a href="T_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM.htm">VnaToolsRealTimeCOM</a>)</td></tr><tr><td><a href="M_Metas_Vna_RealTime_COM_VnaToolsRealTimeCOM3_SaveVNADevice2.htm">SaveVNADevice2</a></td><td>
+            Saves the VNA device to the database
+            </td></tr><tr><td><a href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring" target="_blank" rel="noopener noreferrer">ToString</a></td><td>Returns a string that represents the current object.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr></table></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Reference</h4><div><a href="N_Metas_Vna_RealTime_COM.htm">Metas.Vna.RealTime.COM Namespace</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Definition</a></li><li><a class="quickLink">Constructors</a></li><li><a class="quickLink">Properties</a></li><li><a class="quickLink">Methods</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div class="column"><p><a href="https://www.metas.ch/vnatools" target="_blank" rel="noopener noreferrer">Copyright © METAS 2011 - 2023</a></p><div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:vnatools%40metas.ch?Subject=METAS%20VNA%20Tools%20Help">Michael Wollensack</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        </script> 
+				</div><div class="column"> 
+				</div></div></footer></div><script>$(function(){
+SetDefaultLanguage("cs");
+LoadTocFile(null, null);
+InitializeQuickLinks();
+
+$(".toggleSection" ).click(function () {
+    SectionExpandCollapse(this);
+});
+
+$(".toggleSection").keypress(function () {
+    SectionExpandCollapseCheckKey(this, event)
+});
+hljs.highlightAll();
+});</script></body></html>

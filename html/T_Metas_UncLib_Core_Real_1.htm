@@ -1,0 +1,233 @@
+﻿<!DOCTYPE html ><html lang="en-US"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" href="../css/bulma.css" /><link rel="stylesheet" href="../css/font-awesome.min.css" /><link rel="stylesheet" href="../css/presentationStyle.css" /><link rel="stylesheet" href="../css/vs.min.css" /><script src="../scripts/jquery-3.5.1.min.js"></script><script src="../scripts/clipboard.min.js"></script><script src="../scripts/highlight.min.js"></script><script src="../scripts/presentationStyle.js"></script><title>Real&lt;T&gt; Structure</title><meta name="Title" content="Real&lt;T&gt;" /><meta name="Help.Id" content="T:Metas.UncLib.Core.Real`1" /><meta name="Help.ContentType" content="Reference" /><meta name="container" content="Metas.UncLib.Core" /><meta name="guid" content="T_Metas_UncLib_Core_Real_1" /><meta name="Description" content="Generic Real used to capsule an IRealNumber&lt;T&gt; because interfaces do not support operator overloading and implicit type conversion." /><meta name="tocFile" content="../toc/IDO.xml" /></head><body><div class="fixedLayout"><div id="Header" class="fixedHeader"><div class="pageHeader level mb-0 py-2 px-4"><div id="TitleContainer" class="level-left"><div id="DocumentationTitle" class="level-item">METAS VNA Tools Help</div></div><div id="LangFilterSearchContainer" class="level-right"><div class="level-item"><div class="dropdown is-hoverable"><div class="dropdown-trigger"><button class="button" aria-haspopup="true" aria-controls="dropdown-menu"><span id="CurrentLanguage"></span><span class="icon is-small"><i class="fa fa-angle-down" aria-hidden="true"></i></span></button></div><div class="dropdown-menu" role="menu"><div id="LanguageSelections" class="dropdown-content"><a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a><a class="dropdown-item languageFilterItem" data-languageId="vb">VB</a><a class="dropdown-item languageFilterItem" data-languageId="cpp">C++</a><a class="dropdown-item languageFilterItem" data-languageId="fs">F#</a></div></div></div></div><div class="level-item"><form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;"><div class="field"><div class="control has-icons-left"><input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" /><span class="icon is-small is-left"><i class="fa fa-search"></i></span><button id="SearchButton" type="submit" class="is-hidden"></button></div></div></form></div></div></div></div><div class="fixedContent"><nav class="breadcrumb my-1 px-2 border-bottom" role="navigation"><ul id="TopicBreadcrumbs" /></nav><div class="columns pl-5 pr-5 fixedContent"><div id="ShowHideTOCColumn" class="column is-hidden-tablet"><a id="ShowHideTOC">Show/Hide TOC</a></div><div id="TOCColumn" class="column is-hidden-mobile"><nav class="toc"><ul id="TableOfContents" class="toc-menu" /></nav></div><div id="TopicContent" class="column content is-7"><h1>Real<span id="LST3BBA1F56_0" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><span class="typeparameter">T</span><span id="LST3BBA1F56_1" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span> Structure</h1><div class="summary">
+            Generic Real used to capsule an IRealNumber&lt;T&gt;
+            because interfaces do not support operator overloading 
+            and implicit type conversion.
+            </div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Definition</h2><div id="IDBSection"><strong>Namespace:</strong> <a href="N_Metas_UncLib_Core.htm">Metas.UncLib.Core</a><br /><strong>Assembly:</strong> Metas.UncLib.Core (in Metas.UncLib.Core.dll) Version: 2.8.8578.19621<div class="codeSnippet" data-codeSnippetLanguage="cs"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="keyword">struct</span> <span class="identifier">Real</span>&lt;T&gt; : <span class="identifier">IRealNumber2</span>&lt;<span class="identifier">Real</span>&lt;T&gt;, T&gt;, 
+	<span class="identifier">IRealNumber</span>, <span class="identifier">INumber</span>&lt;<span class="identifier">Real</span>&lt;T&gt;&gt;, <span class="identifier">IConsole</span>, <span class="identifier">IStorage</span>&lt;<span class="identifier">Real</span>&lt;T&gt;&gt;, 
+	<span class="identifier">IStorageBinary</span>, <span class="identifier">IComparable</span>, <span class="identifier">IElementArithmetic</span>&lt;<span class="identifier">Real</span>&lt;T&gt;&gt;, <span class="identifier">IArithmetic</span>&lt;<span class="identifier">Real</span>&lt;T&gt;&gt;, 
+	<span class="identifier">IMath</span>&lt;<span class="identifier">Real</span>&lt;T&gt;&gt;, <span class="identifier">IRealMath</span>&lt;<span class="identifier">Real</span>&lt;T&gt;&gt;
+<span class="keyword">where</span> T : <span class="keyword">new</span>(), <span class="identifier">Object</span>, <span class="identifier">IRealNumber</span>&lt;T&gt;
+</code></pre></div></div><div class="codeSnippet is-hidden" data-codeSnippetLanguage="vb"><div class="codeHeader"><span class="codeHeaderTitle">VB</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-vb"><span class="keyword">Public</span> <span class="keyword">Structure</span> <span class="identifier">Real</span>(<span class="keyword">Of</span> T <span class="keyword">As</span> {<span class="keyword">New</span>, <span class="identifier">Object</span>, <span class="identifier">IRealNumber</span>(<span class="keyword">Of</span> T)})
+	<span class="keyword">Implements</span> <span class="identifier">IRealNumber2</span>(<span class="keyword">Of</span> <span class="identifier">Real</span>(<span class="keyword">Of</span> T), T), 
+	<span class="identifier">IRealNumber</span>, <span class="identifier">INumber</span>(<span class="keyword">Of</span> <span class="identifier">Real</span>(<span class="keyword">Of</span> T)), <span class="identifier">IConsole</span>, 
+	<span class="identifier">IStorage</span>(<span class="keyword">Of</span> <span class="identifier">Real</span>(<span class="keyword">Of</span> T)), <span class="identifier">IStorageBinary</span>, <span class="identifier">IComparable</span>, 
+	<span class="identifier">IElementArithmetic</span>(<span class="keyword">Of</span> <span class="identifier">Real</span>(<span class="keyword">Of</span> T)), <span class="identifier">IArithmetic</span>(<span class="keyword">Of</span> <span class="identifier">Real</span>(<span class="keyword">Of</span> T)), 
+	<span class="identifier">IMath</span>(<span class="keyword">Of</span> <span class="identifier">Real</span>(<span class="keyword">Of</span> T)), <span class="identifier">IRealMath</span>(<span class="keyword">Of</span> <span class="identifier">Real</span>(<span class="keyword">Of</span> T))</code></pre></div></div><div class="codeSnippet is-hidden" data-codeSnippetLanguage="cpp"><div class="codeHeader"><span class="codeHeaderTitle">C++</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cpp"><span class="keyword">generic</span>&lt;<span class="keyword">typename</span> T&gt;
+<span class="keyword">where</span> T : <span class="keyword">gcnew</span>(), <span class="identifier">Object</span>, <span class="identifier">IRealNumber</span>&lt;T&gt;
+<span class="keyword">public</span> <span class="keyword">value class</span> <span class="identifier">Real</span> : <span class="identifier">IRealNumber2</span>&lt;<span class="identifier">Real</span>&lt;T&gt;, T&gt;, 
+	<span class="identifier">IRealNumber</span>, <span class="identifier">INumber</span>&lt;<span class="identifier">Real</span>&lt;T&gt;&gt;, <span class="identifier">IConsole</span>, <span class="identifier">IStorage</span>&lt;<span class="identifier">Real</span>&lt;T&gt;&gt;, 
+	<span class="identifier">IStorageBinary</span>, <span class="identifier">IComparable</span>, <span class="identifier">IElementArithmetic</span>&lt;<span class="identifier">Real</span>&lt;T&gt;&gt;, <span class="identifier">IArithmetic</span>&lt;<span class="identifier">Real</span>&lt;T&gt;&gt;, 
+	<span class="identifier">IMath</span>&lt;<span class="identifier">Real</span>&lt;T&gt;&gt;, <span class="identifier">IRealMath</span>&lt;<span class="identifier">Real</span>&lt;T&gt;&gt;</code></pre></div></div><div class="codeSnippet is-hidden" data-codeSnippetLanguage="fs"><div class="codeHeader"><span class="codeHeaderTitle">F#</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-fs">[&lt;<span class="identifier">SealedAttribute</span>&gt;]
+<span class="keyword">type</span> <span class="identifier">Real</span>&lt;'T <span class="keyword">when</span> 'T : <span class="keyword">new</span>() and <span class="identifier">Object</span> and <span class="identifier">IRealNumber</span>&lt;'T&gt;&gt; = 
+    <span class="keyword">struct</span>
+        <span class="keyword">inherit</span> <span class="identifier">ValueType</span>
+        <span class="keyword">interface</span> <span class="identifier">IRealNumber2</span>&lt;<span class="identifier">Real</span>&lt;'T&gt;, 'T&gt;
+        <span class="keyword">interface</span> <span class="identifier">IRealNumber</span>
+        <span class="keyword">interface</span> <span class="identifier">INumber</span>&lt;<span class="identifier">Real</span>&lt;'T&gt;&gt;
+        <span class="keyword">interface</span> <span class="identifier">IConsole</span>
+        <span class="keyword">interface</span> <span class="identifier">IStorage</span>&lt;<span class="identifier">Real</span>&lt;'T&gt;&gt;
+        <span class="keyword">interface</span> <span class="identifier">IStorageBinary</span>
+        <span class="keyword">interface</span> <span class="identifier">IComparable</span>
+        <span class="keyword">interface</span> <span class="identifier">IElementArithmetic</span>&lt;<span class="identifier">Real</span>&lt;'T&gt;&gt;
+        <span class="keyword">interface</span> <span class="identifier">IArithmetic</span>&lt;<span class="identifier">Real</span>&lt;'T&gt;&gt;
+        <span class="keyword">interface</span> <span class="identifier">IMath</span>&lt;<span class="identifier">Real</span>&lt;'T&gt;&gt;
+        <span class="keyword">interface</span> <span class="identifier">IRealMath</span>&lt;<span class="identifier">Real</span>&lt;'T&gt;&gt;
+    <span class="keyword">end</span></code></pre></div></div><dl class="inheritanceHierarchy"><dt>Inheritance</dt><dd><a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>  <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>  <a href="https://learn.microsoft.com/dotnet/api/system.valuetype" target="_blank" rel="noopener noreferrer">ValueType</a>  <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>  <span class="selflink">Real<span id="LST3BBA1F56_2" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST3BBA1F56_3" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></span></dd></dl><dl class="implementsList"><dt>Implements</dt><dd><a href="T_Metas_UncLib_Core_Interface_IArithmetic_1.htm">IArithmetic</a><span id="LST3BBA1F56_4" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><span class="selflink">Real</span><span id="LST3BBA1F56_5" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><span class="selflink"><span class="typeparameter">T</span></span><span id="LST3BBA1F56_6" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span><span id="LST3BBA1F56_7" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>, <a href="T_Metas_UncLib_Core_Interface_IComparable.htm">IComparable</a>, <a href="T_Metas_UncLib_Core_Interface_IConsole.htm">IConsole</a>, <a href="T_Metas_UncLib_Core_Interface_IElementArithmetic_1.htm">IElementArithmetic</a><span id="LST3BBA1F56_8" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><span class="selflink">Real</span><span id="LST3BBA1F56_9" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><span class="selflink"><span class="typeparameter">T</span></span><span id="LST3BBA1F56_10" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span><span id="LST3BBA1F56_11" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>, <a href="T_Metas_UncLib_Core_Interface_IMath_1.htm">IMath</a><span id="LST3BBA1F56_12" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><span class="selflink">Real</span><span id="LST3BBA1F56_13" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><span class="selflink"><span class="typeparameter">T</span></span><span id="LST3BBA1F56_14" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span><span id="LST3BBA1F56_15" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>, <a href="T_Metas_UncLib_Core_Interface_INumber_1.htm">INumber</a><span id="LST3BBA1F56_16" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><span class="selflink">Real</span><span id="LST3BBA1F56_17" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><span class="selflink"><span class="typeparameter">T</span></span><span id="LST3BBA1F56_18" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span><span id="LST3BBA1F56_19" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>, <a href="T_Metas_UncLib_Core_Interface_IRealMath_1.htm">IRealMath</a><span id="LST3BBA1F56_20" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><span class="selflink">Real</span><span id="LST3BBA1F56_21" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><span class="selflink"><span class="typeparameter">T</span></span><span id="LST3BBA1F56_22" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span><span id="LST3BBA1F56_23" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>, <a href="T_Metas_UncLib_Core_Interface_IRealNumber.htm">IRealNumber</a>, <a href="T_Metas_UncLib_Core_Interface_IRealNumber2_2.htm">IRealNumber2</a><span id="LST3BBA1F56_24" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><span class="selflink">Real</span><span id="LST3BBA1F56_25" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><span class="selflink"><span class="typeparameter">T</span></span><span id="LST3BBA1F56_26" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>, <span class="selflink"><span class="typeparameter">T</span></span><span id="LST3BBA1F56_27" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>, <a href="T_Metas_UncLib_Core_Interface_IStorage_1.htm">IStorage</a><span id="LST3BBA1F56_28" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><span class="selflink">Real</span><span id="LST3BBA1F56_29" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><span class="selflink"><span class="typeparameter">T</span></span><span id="LST3BBA1F56_30" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span><span id="LST3BBA1F56_31" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>, <a href="T_Metas_UncLib_Core_Interface_IStorageBinary.htm">IStorageBinary</a></dd></dl><h4>Type Parameters</h4><dl><dt class="has-text-weight-normal"><span class="parameter">T</span></dt><dd>Real Type</dd></dl></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Constructors</h2><div id="IDAAGASection"><table id="ConstructorList" class="table is-hoverable"><tr><td><a href="M_Metas_UncLib_Core_Real_1__ctor.htm">Real<span id="LST3BBA1F56_32" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST3BBA1F56_33" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span>(Double)</a></td><td>
+            Creates new Real
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1__ctor_1.htm">Real<span id="LST3BBA1F56_34" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST3BBA1F56_35" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span>(T)</a></td><td>
+            Creates new Real
+            </td></tr></table></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Properties</h2><div id="ID04B0GASection"><table id="PropertyList" class="table is-hoverable"><tr><td><a href="P_Metas_UncLib_Core_Real_1_ExpValue.htm">ExpValue</a></td><td>
+            Expected Value
+            </td></tr><tr><td><a href="P_Metas_UncLib_Core_Real_1_FcnValue.htm">FcnValue</a></td><td>
+            Function Value
+            </td></tr><tr><td><a href="P_Metas_UncLib_Core_Real_1_IDof.htm">IDof</a></td><td>
+            Computes the Inverse of the Degrees of Freedom
+            </td></tr><tr><td><a href="P_Metas_UncLib_Core_Real_1_IsConst.htm">IsConst</a></td><td>
+            Returns true if it's a Const
+            </td></tr><tr><td><a href="P_Metas_UncLib_Core_Real_1_Item.htm">Item</a></td><td>
+            Item IRealNumber&lt;T&gt;
+            </td></tr><tr><td><a href="P_Metas_UncLib_Core_Real_1_memsize.htm">memsize</a></td><td>
+            Number of bytes allocated for the Object.
+            </td></tr><tr><td><a href="P_Metas_UncLib_Core_Real_1_One.htm">One</a></td><td>
+            Returns the neutral element of multiplication
+            </td></tr><tr><td><a href="P_Metas_UncLib_Core_Real_1_StdUnc.htm">StdUnc</a></td><td>
+            Computes the Standard Uncertainty
+            </td></tr><tr><td><a href="P_Metas_UncLib_Core_Real_1_Value.htm">Value</a></td><td>
+            Value
+            </td></tr><tr><td><a href="P_Metas_UncLib_Core_Real_1_Zero.htm">Zero</a></td><td>
+            Returns the neutral element of addition
+            </td></tr></table></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Methods</h2><div id="IDBGASection"><table id="MethodList" class="table is-hoverable"><tr><td><a href="M_Metas_UncLib_Core_Real_1_Abs.htm">Abs</a></td><td>
+            Returns the absolute value.
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_Acos.htm">Acos</a></td><td>
+            Returns the angle whose cosine is the specified number.
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_Acosh.htm">Acosh</a></td><td>
+            Returns the angle whose hyperbolic cosine is the specified number.
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_Add.htm">Add</a></td><td>
+            Returns the sum of the object and <span class="parameter">b</span>.
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_Asin.htm">Asin</a></td><td>
+            Returns the angle whose sine is the specified number.
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_Asinh.htm">Asinh</a></td><td>
+            Returns the angle whose hyperbolic sine is the specified number.
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_Atan.htm">Atan</a></td><td>
+            Returns the angle whose tangent is the specified number.
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_Atan2.htm">Atan2</a></td><td>
+            Returns the angle whose tangent is the quotient of two specified numbers.
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_Atanh.htm">Atanh</a></td><td>
+            Returns the angle whose hyperbolic tangent is the specified number.
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_BinaryDeserialize.htm">BinaryDeserialize</a></td><td>
+            Binary Deserialize an Object from File.
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_BinaryDeserializeFromByteArray.htm">BinaryDeserializeFromByteArray</a></td><td>
+            Binary Deserialize an Object from a byte array.
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_BinarySerialize.htm">BinarySerialize</a></td><td>
+            Binary Serialize an Object to File.
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_BinarySerializeToByteArray.htm">BinarySerializeToByteArray</a></td><td>
+            Binary Serialize an Object to a byte array.
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_BinarySetDataFrom.htm">BinarySetDataFrom</a></td><td>
+            Set object data from Binary Reader.
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_BinaryWriteDataTo.htm">BinaryWriteDataTo</a></td><td>
+            Write object data to Binary Writer.
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_ComplexAbs.htm">ComplexAbs</a></td><td>
+            Complex absolute value
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_ComplexDivision.htm">ComplexDivision</a></td><td>
+            Complex division
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_Conj.htm">Conj</a></td><td>
+            Returns the complex conjugate.
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_Cos.htm">Cos</a></td><td>
+            Returns the cosine of the specified angle.
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_Cosh.htm">Cosh</a></td><td>
+            Returns the hyperbolic cosine of the specified angle.
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_DblSqrFcnValue.htm">DblSqrFcnValue</a></td><td>
+            Returns the square function value.
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_Debug.htm">Debug</a></td><td>
+            Debug an Object
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_Divide.htm">Divide</a></td><td>
+            Returns the quotient of the object and <span class="parameter">b</span>.
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_Ellipe.htm">Ellipe</a></td><td>
+            Returns the complete elliptic integral of the second kind.
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_Ellipk.htm">Ellipk</a></td><td>
+            Returns the complete elliptic integral of the first kind.
+            </td></tr><tr><td><a href="https://learn.microsoft.com/dotnet/api/system.valuetype.equals#system-valuetype-equals(system-object)" target="_blank" rel="noopener noreferrer">Equals</a></td><td>Indicates whether this instance and a specified object are equal.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.valuetype" target="_blank" rel="noopener noreferrer">ValueType</a>)</td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_Exp.htm">Exp</a></td><td>
+            Returns e raised to the specified power.
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_FcnValue2.htm">FcnValue2</a></td><td>
+            Returns the function value.
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_GetCoverageInterval.htm">GetCoverageInterval</a></td><td>
+            Computes the Coverage Interval
+            </td></tr><tr><td><a href="https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode#system-valuetype-gethashcode" target="_blank" rel="noopener noreferrer">GetHashCode</a></td><td>Returns the hash code for this instance.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.valuetype" target="_blank" rel="noopener noreferrer">ValueType</a>)</td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_GetMoment.htm">GetMoment</a></td><td>
+            Computes the n-th Central Moment
+            </td></tr><tr><td><a href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype" target="_blank" rel="noopener noreferrer">GetType</a></td><td>Gets the <a href="https://learn.microsoft.com/dotnet/api/system.type" target="_blank" rel="noopener noreferrer">Type</a> of the current instance.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_InitDbl.htm">InitDbl</a></td><td>
+            Initializes a Real Number.
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_IsNotZero.htm">IsNotZero</a></td><td>
+            Returns true if the Value of an Object is not equal to zero.
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_IsOne.htm">IsOne</a></td><td>
+            Returns true if the Value of an Object is equal to one.
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_IsZero.htm">IsZero</a></td><td>
+            Returns true if the Value of an Object is equal to zero.
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_Log.htm">Log<span id="LST3BBA1F56_36" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a></td><td>
+            Returns the natural (base e) logarithm of a specified number.
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_Log_1.htm">Log(Real<span id="LST3BBA1F56_37" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST3BBA1F56_38" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a></td><td>
+            Returns the logarithm of a specified number in a specified base.
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_Log10.htm">Log10</a></td><td>
+            Returns the base 10 logarithm of a specified number.
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_Multiply.htm">Multiply</a></td><td>
+            Returns the product of the object and <span class="parameter">b</span>.
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_Negative.htm">Negative</a></td><td>
+            Returns the negative of the object.
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_Pow_1.htm">Pow(Int32)</a></td><td>
+            Returns a specified number raised to the specified power.
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_Pow.htm">Pow(Real<span id="LST3BBA1F56_39" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST3BBA1F56_40" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a></td><td>
+            Returns a specified number raised to the specified power.
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_Sign.htm">Sign</a></td><td>
+            Returns a value indicating the sign of a number.
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_Sin.htm">Sin</a></td><td>
+            Returns the sine of the specified angle.
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_Sinh.htm">Sinh</a></td><td>
+            Returns the hyperbolic sine of the specified angle.
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_Sqrt.htm">Sqrt</a></td><td>
+            Returns the square root of a specified number.
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_Subtract.htm">Subtract</a></td><td>
+            Returns the difference of the object and <span class="parameter">b</span>.
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_Tan.htm">Tan</a></td><td>
+            Returns the tangent of the specified angle.
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_Tanh.htm">Tanh</a></td><td>
+            Returns the hyperbolic tangent of the specified angle.
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_ToString.htm">ToString</a></td><td>
+            Override ToString() to display an Object.
+            <br />(Overrides <a href="https://learn.microsoft.com/dotnet/api/system.valuetype.tostring#system-valuetype-tostring" target="_blank" rel="noopener noreferrer">ValueType<span id="LST3BBA1F56_41" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>ToString<span id="LST3BBA1F56_42" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a>)</td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_XmlDeserialize.htm">XmlDeserialize</a></td><td>
+            Xml Deserialize an Object from File.
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_XmlDeserializeFromString.htm">XmlDeserializeFromString</a></td><td>
+            Xml Deserialize an Object from String.
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_XmlSerialize.htm">XmlSerialize</a></td><td>
+            Xml Serialize an Object to File.
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_XmlSerializeToString.htm">XmlSerializeToString</a></td><td>
+            Xml Serialize an Object to String.
+            </td></tr></table></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Operators</h2><div id="ID0LB0GASection"><table id="OperatorList" class="table is-hoverable"><tr><td><a href="M_Metas_UncLib_Core_Real_1_op_Addition_3.htm">Addition(Double, Real<span id="LST3BBA1F56_43" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST3BBA1F56_44" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a></td><td>
+            Overloading '+' operator
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_op_Addition_4.htm">Addition(T, Real<span id="LST3BBA1F56_45" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST3BBA1F56_46" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a></td><td>
+            Overloading '+' operator
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_op_Addition_2.htm">Addition(Real<span id="LST3BBA1F56_47" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST3BBA1F56_48" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>, T)</a></td><td>
+            Overloading '+' operator
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_op_Addition.htm">Addition(Real<span id="LST3BBA1F56_49" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST3BBA1F56_50" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>, Real<span id="LST3BBA1F56_51" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST3BBA1F56_52" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a></td><td>
+            Overloading '+' operator
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_op_Addition_1.htm">Addition(Real<span id="LST3BBA1F56_53" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST3BBA1F56_54" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>, Double)</a></td><td>
+            Overloading '+' operator
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_op_Division_3.htm">Division(Double, Real<span id="LST3BBA1F56_55" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST3BBA1F56_56" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a></td><td>
+            Overloading '/' operator
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_op_Division_4.htm">Division(T, Real<span id="LST3BBA1F56_57" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST3BBA1F56_58" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a></td><td>
+            Overloading '/' operator
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_op_Division_2.htm">Division(Real<span id="LST3BBA1F56_59" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST3BBA1F56_60" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>, T)</a></td><td>
+            Overloading '/' operator
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_op_Division.htm">Division(Real<span id="LST3BBA1F56_61" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST3BBA1F56_62" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>, Real<span id="LST3BBA1F56_63" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST3BBA1F56_64" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a></td><td>
+            Overloading '/' operator
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_op_Division_1.htm">Division(Real<span id="LST3BBA1F56_65" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST3BBA1F56_66" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>, Double)</a></td><td>
+            Overloading '/' operator
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_op_Implicit_1.htm"><span id="LST3BBA1F56_67" data-languageSpecificText="cs=Implicit|vb=Widening|cpp=Implicit|nu=Implicit|fs=Implicit"></span>(Double to Real<span id="LST3BBA1F56_68" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST3BBA1F56_69" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a></td><td>
+            Convert double to Real
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_op_Implicit_2.htm"><span id="LST3BBA1F56_70" data-languageSpecificText="cs=Implicit|vb=Widening|cpp=Implicit|nu=Implicit|fs=Implicit"></span>(T to Real<span id="LST3BBA1F56_71" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST3BBA1F56_72" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a></td><td>
+            Convert IRealNumber&lt;T&gt; to Real
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_op_Implicit.htm"><span id="LST3BBA1F56_73" data-languageSpecificText="cs=Implicit|vb=Widening|cpp=Implicit|nu=Implicit|fs=Implicit"></span>(Real<span id="LST3BBA1F56_74" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST3BBA1F56_75" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span> to T)</a></td><td>
+            Convert Real to IRealNumber&lt;T&gt;
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_op_Multiply_3.htm">Multiply(Double, Real<span id="LST3BBA1F56_76" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST3BBA1F56_77" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a></td><td>
+            Overloading '*' operator
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_op_Multiply_4.htm">Multiply(T, Real<span id="LST3BBA1F56_78" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST3BBA1F56_79" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a></td><td>
+            Overloading '*' operator
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_op_Multiply_2.htm">Multiply(Real<span id="LST3BBA1F56_80" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST3BBA1F56_81" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>, T)</a></td><td>
+            Overloading '*' operator
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_op_Multiply.htm">Multiply(Real<span id="LST3BBA1F56_82" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST3BBA1F56_83" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>, Real<span id="LST3BBA1F56_84" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST3BBA1F56_85" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a></td><td>
+            Overloading '*' operator
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_op_Multiply_1.htm">Multiply(Real<span id="LST3BBA1F56_86" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST3BBA1F56_87" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>, Double)</a></td><td>
+            Overloading '*' operator
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_op_Subtraction_3.htm">Subtraction(Double, Real<span id="LST3BBA1F56_88" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST3BBA1F56_89" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a></td><td>
+            Overloading '-' operator
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_op_Subtraction_4.htm">Subtraction(T, Real<span id="LST3BBA1F56_90" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST3BBA1F56_91" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a></td><td>
+            Overloading '-' operator
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_op_Subtraction_2.htm">Subtraction(Real<span id="LST3BBA1F56_92" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST3BBA1F56_93" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>, T)</a></td><td>
+            Overloading '-' operator
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_op_Subtraction.htm">Subtraction(Real<span id="LST3BBA1F56_94" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST3BBA1F56_95" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>, Real<span id="LST3BBA1F56_96" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST3BBA1F56_97" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a></td><td>
+            Overloading '-' operator
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_op_Subtraction_1.htm">Subtraction(Real<span id="LST3BBA1F56_98" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST3BBA1F56_99" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>, Double)</a></td><td>
+            Overloading '-' operator
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_op_UnaryNegation.htm">UnaryNegation(Real<span id="LST3BBA1F56_100" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST3BBA1F56_101" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a></td><td>
+            Overloading '-' operator
+            </td></tr><tr><td><a href="M_Metas_UncLib_Core_Real_1_op_UnaryPlus.htm">UnaryPlus(Real<span id="LST3BBA1F56_102" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST3BBA1F56_103" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a></td><td>
+            Overloading '+' operator
+            </td></tr></table></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Reference</h4><div><a href="N_Metas_UncLib_Core.htm">Metas.UncLib.Core Namespace</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Definition</a></li><li><a class="quickLink">Constructors</a></li><li><a class="quickLink">Properties</a></li><li><a class="quickLink">Methods</a></li><li><a class="quickLink">Operators</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div class="column"><p><a href="https://www.metas.ch/vnatools" target="_blank" rel="noopener noreferrer">Copyright © METAS 2011 - 2023</a></p><div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:vnatools%40metas.ch?Subject=METAS%20VNA%20Tools%20Help">Michael Wollensack</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        </script> 
+				</div><div class="column"> 
+				</div></div></footer></div><script>$(function(){
+SetDefaultLanguage("cs");
+LoadTocFile(null, null);
+InitializeQuickLinks();
+
+$(".toggleSection" ).click(function () {
+    SectionExpandCollapse(this);
+});
+
+$(".toggleSection").keypress(function () {
+    SectionExpandCollapseCheckKey(this, event)
+});
+hljs.highlightAll();
+});</script></body></html>
